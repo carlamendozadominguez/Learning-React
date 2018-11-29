@@ -8,6 +8,7 @@ describe('CounterButton', () => {
      const wrapper = shallow(<CounterButton />);
      expect(wrapper.find("button").text()).toBe("0");
    });
+   
    test("Debería aumentar el estado actual de contador y sumarle uno", () => {
      const wrapper = shallow(<CounterButton />);
      wrapper.find("button").simulate("click");
