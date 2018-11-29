@@ -40,5 +40,12 @@ describe("NumberPicker", () => {
         expect(wrapper.find('div').childAt(1).text()).toBe('0');
         expect(wrapper.find('div').childAt(1).is('span')).toBeTruthy();
       });
+
+      test("Debería aumentar el estado actual de contador y sumarle uno", () => {
+        const wrapper = shallow(<NumberPicker />);
+        wrapper.find("button").at(1).simulate("click");
+        expect(wrapper.find("button").text()).toBe("1");
+      });
+
     });
   });
