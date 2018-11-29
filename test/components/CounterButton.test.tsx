@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { shallow } from 'enzyme';
-import CounterButton from "../src/components/CounterButton";
+import CounterButton from "../../src/components/CounterButton";
 
 describe('CounterButton', () => {
  describe('render', () => {
