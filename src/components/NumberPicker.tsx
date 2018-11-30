@@ -69,11 +69,10 @@ export default class NumberPicker extends React.Component<{}, NumberPickerState>
   }
 
   render() {
+    // Si botonMasvisible es true me devuelve lo primer
     return (
       <div style={numberPickerStyle}>
-        <button style={numberPickerButton} onClick={this.increaseCounter}>
-            +
-        </button>
+        {this.state.counter < 3 && <button style={numberPickerButton} onClick={this.increaseCounter}>+</button>}
         <span style={numberPickerLabel}>{this.state.counter}</span>
         <button style={numberPickerButton} onClick={this.decreaseCounter}>
             -
