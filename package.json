@@ -39,11 +39,13 @@
     "typescript": "^2.8.3",
     "webpack": "^4.9.1",
     "webpack-cli": "^2.1.4",
-    "webpack-dev-server": "^3.1.4"
+    "webpack-dev-server": "^3.1.10"
   },
   "dependencies": {
     "react": "^16.4.0",
-    "react-dom": "^16.4.0"
+    "react-dom": "^16.4.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1"
   },
   "jest": {
     "transform": {
